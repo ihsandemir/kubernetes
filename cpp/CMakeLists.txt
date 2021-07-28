@@ -22,9 +22,9 @@ project(hazelcast-cpp-kubernetes-example
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(hazelcastcxx REQUIRED)
+find_package(hazelcast-cpp-client REQUIRED)
 
 add_executable(cpp_client Client.cpp)
 
-target_link_libraries(cpp_client PRIVATE hazelcast::hazelcastcxx)
+target_link_libraries(cpp_client PRIVATE hazelcast-cpp-client::hazelcast-cpp-client)
 
